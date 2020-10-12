@@ -1,0 +1,1148 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{1CB730C3-86E5-4215-9812-3142B97B8F0A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Electrolux.ShopFloor.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ElectroluxShopFlooriOS</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\acremaschi\Documents\temp</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <BuildIpa>False</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <MtouchFloat32>True</MtouchFloat32>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>Apple Development: EXTRA.it Srl (8M6X7YJCN5)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <BuildIpa>True</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>false</MtouchFloat32>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <IpaPackageName>ElectroluxShopFlooriOS-V1.0B1.XX</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production (DEBUG)|iPhoneSimulator'">
+    <MtouchSdkVersion>9.3</MtouchSdkVersion>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;PROD</DefineConstants>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|iPhoneSimulator'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\iPhoneSimulator\UAT\</OutputPath>
+    <DefineConstants>USERACCEPTANCETESTING;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>Apple Development: Amedeo Gautiero (468DDBX9S7)</CodesignKey>
+    <MtouchEnableSGenConc>false</MtouchEnableSGenConc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|iPhone'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\iPhone\UAT\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;USERACCEPTANCETESTING</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodesignKey>iPhone Distribution: Extra.it srl</CodesignKey>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignProvision>ShopFloorDistributionUAT</CodesignProvision>
+    <MtouchDebug>false</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>ElectroluxShopFlooriOS.UAT.ipa</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|iPhoneSimulator'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\iPhoneSimulator\Production\</OutputPath>
+    <DefineConstants>PRODUCTION;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|iPhone'">
+    <OutputPath>bin\iPhone\Production\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;PRODUCTION</DefineConstants>
+    <Optimize>true</Optimize>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodesignProvision>XC iOS: it.extra.Electrolux.ShopFloor.iOS</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Extra.it srl</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchDebug>false</MtouchDebug>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <BuildIpa>true</BuildIpa>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchProfiling>
+    </MtouchProfiling>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchUseThumb>
+    </MtouchUseThumb>
+    <MtouchLink>None</MtouchLink>
+    <IpaPackageName>ElectroluxShopFlooriOS.ipa</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CreateIpaDependsOn>
+     echo Prova
+    </CreateIpaDependsOn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>-->
+    <None Include="Info-UAT.plist" Condition=" '$(Configuration)' == 'UAT' ">
+      <LogicalName>Info.plist</LogicalName>
+    </None>
+    <!-- <None Include="Info-PROD.plist" Condition=" '$(Configuration)' == 'Production-old' "> -->
+    <!-- <LogicalName>Info.plist</LogicalName> -->
+    <!-- </None> -->
+    <None Include="Info-Production.plist" Condition=" '$(Configuration)' == 'Production' ">
+      <LogicalName>Info.plist</LogicalName>
+    </None>
+    <InterfaceDefinition Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewColumnHeader.xib" />
+    <InterfaceDefinition Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewRowHeader.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="app.config" />
+    <None Include="Electrolux.ShopFloor.iOS_TemporaryKey.pfx" />
+    <None Include="GettingStarted.Xamarin" />
+    <!--<None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>-->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+    <Compile Include="Services\Providers\AppConfig.cs" />
+    <Compile Include="Services\Providers\FileStorageProvider.cs" />
+    <Compile Include="Services\Providers\NetworkProvider.cs" />
+    <Compile Include="Services\Providers\UIServiceProvider.cs" />
+    <Compile Include="Controls\TableViewCells\Base\ICellBinding.cs" />
+    <Compile Include="Controls\TableViewCells\ReportsViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ReportsViewCell.designer.cs">
+      <DependentUpon>ReportsViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppNavigationController.cs" />
+    <Compile Include="AppNavigationController.designer.cs">
+      <DependentUpon>AppNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TableViewCells\ReportEditorViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ReportEditorViewCell.designer.cs">
+      <DependentUpon>ReportEditorViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\BaseTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\BaseTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\BaseTableViewCell.designer.cs">
+      <DependentUpon>BaseTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Controls\TableViewCells\Base\ICellBindingViewModel.cs" />
+    <InterfaceDefinition Include="Controls\TableViewCells\ModelCategoryTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ModelCategoryTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ModelCategoryTableViewCell.designer.cs">
+      <DependentUpon>ModelCategoryTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\SelectableBrandTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\SelectableBrandTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\SelectableBrandTableViewCell.designer.cs">
+      <DependentUpon>SelectableBrandTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Resources\CompetitorsActivities.storyboard" />
+    <Compile Include="Infrastructure\BindingContainer.cs" />
+    <InterfaceDefinition Include="Controls\TableViewCells\ActivityViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ActivityViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ActivityViewCell.designer.cs">
+      <DependentUpon>ActivityViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\ReasonViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ReasonViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ReasonViewCell.designer.cs">
+      <DependentUpon>ReasonViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\TimeSpentViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\TimeSpentViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\TimeSpentViewCell.designer.cs">
+      <DependentUpon>TimeSpentViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\CategoryViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\CategoryViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\CategoryViewCell.designer.cs">
+      <DependentUpon>CategoryViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\ModelCategoryModelTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ModelCategoryModelTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ModelCategoryModelTableViewCell.designer.cs">
+      <DependentUpon>ModelCategoryModelTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewColumnHeader.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewColumnHeader.designer.cs">
+      <DependentUpon>CollectionReusableviewColumnHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewRowHeader.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\CollectionReusableviewRowHeader.designer.cs">
+      <DependentUpon>CollectionReusableviewRowHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FloorspaceCompetitorsByBrandFiltersViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FloorspaceCompetitorsByBrandFiltersViewController.designer.cs">
+      <DependentUpon>FloorspaceCompetitorsByBrandFiltersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FloorspaceCompetitorsByBrandViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FloorspaceCompetitorsByBrandViewController.designer.cs">
+      <DependentUpon>FloorspaceCompetitorsByBrandViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FSCompetitorByBrandBrandsCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FSCompetitorByBrandBrandsCell.designer.cs">
+      <DependentUpon>FSCompetitorByBrandBrandsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FSCompetitorByBrandProductGroupsCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\FSCompetitorByBrandProductGroupsCell.designer.cs">
+      <DependentUpon>FSCompetitorByBrandProductGroupsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\MainCollectionCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\MainCollectionCell.designer.cs">
+      <DependentUpon>MainCollectionCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitorsByBrand\MultpleLineLayout.cs" />
+    <Compile Include="ViewControllers\HomeViewController.cs" />
+    <Compile Include="ViewControllers\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\LoginViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportEditorViewController.cs" />
+    <Compile Include="ViewControllers\ReportEditorViewController.designer.cs">
+      <DependentUpon>ReportEditorViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportsViewController.cs" />
+    <Compile Include="ViewControllers\ReportsViewController.designer.cs">
+      <DependentUpon>ReportsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SplashViewController.cs" />
+    <Compile Include="ViewControllers\SplashViewController.designer.cs">
+      <DependentUpon>SplashViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\BaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\BaseViewController.designer.cs">
+      <DependentUpon>BaseViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\BaseViewControllerT.cs" />
+    <Compile Include="ViewControllers\Base\DatePickerPopoverViewController.cs" />
+    <Compile Include="ViewControllers\Base\DetailBaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\DialogAppBaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\ListBaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\ListBaseViewController.designer.cs">
+      <DependentUpon>ListBaseViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\ListDetailBaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\PopoverViewController.cs" />
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesDetailsViewController.cs" />
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesDetailsViewController.designer.cs">
+      <DependentUpon>CompetitorsActivitiesDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesViewController.cs" />
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesViewController.designer.cs">
+      <DependentUpon>CompetitorsActivitiesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsDetailsViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsDetailsViewController.designer.cs">
+      <DependentUpon>FloorspaceCompetitorsDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsViewController.designer.cs">
+      <DependentUpon>FloorspaceCompetitorsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FloorspaceElectroluxViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FloorspaceElectroluxViewController.designer.cs">
+      <DependentUpon>FloorspaceElectroluxViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\GeneralInfo\GeneralInfoViewController.cs" />
+    <Compile Include="ViewControllers\GeneralInfo\GeneralInfoViewController.designer.cs">
+      <DependentUpon>GeneralInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Sellout\SelloutDetailsViewController.cs" />
+    <Compile Include="ViewControllers\Sellout\SelloutDetailsViewController.designer.cs">
+      <DependentUpon>SelloutDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Sellout\SelloutViewController.cs" />
+    <Compile Include="ViewControllers\Sellout\SelloutViewController.designer.cs">
+      <DependentUpon>SelloutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesDetailsViewController.cs" />
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesDetailsViewController.designer.cs">
+      <DependentUpon>ShopActivitiesDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesViewController.cs" />
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesViewController.designer.cs">
+      <DependentUpon>ShopActivitiesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShopInformation\ShopInformationViewController.cs" />
+    <Compile Include="ViewControllers\ShopInformation\ShopInformationViewController.designer.cs">
+      <DependentUpon>ShopInformationViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\DailyTrafficViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\DailyTrafficViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\DailyTrafficViewCell.designer.cs">
+      <DependentUpon>DailyTrafficViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\WeatherViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\WeatherViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\WeatherViewCell.designer.cs">
+      <DependentUpon>WeatherViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FloorspaceElectroluxTableViewCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FloorspaceElectroluxTableViewCell.designer.cs">
+      <DependentUpon>FloorspaceElectroluxTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\ModelProductSetTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ModelProductSetTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ModelProductSetTableViewCell.designer.cs">
+      <DependentUpon>ModelProductSetTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\PncViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\PncViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\PncViewCell.designer.cs">
+      <DependentUpon>PncViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\KitchenTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\KitchenTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\KitchenTableViewCell.designer.cs">
+      <DependentUpon>KitchenTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsTableViewCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceCompetitors\FloorspaceCompetitorsTableViewCell.designer.cs">
+      <DependentUpon>FloorspaceCompetitorsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesTableViewCell.cs" />
+    <Compile Include="ViewControllers\CompetitorsActivities\CompetitorsActivitiesTableViewCell.designer.cs">
+      <DependentUpon>CompetitorsActivitiesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="iPadMain.storyboard">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxModelSearchViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxModelSearchViewController.designer.cs">
+      <DependentUpon>FSElectroluxModelSearchViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceElectrolux\ModelPopoverViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxModelSearchViewCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxModelSearchViewCell.designer.cs">
+      <DependentUpon>FSElectroluxModelSearchViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxOptionalDataViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceElectrolux\FSElectroluxOptionalDataViewController.designer.cs">
+      <DependentUpon>FSElectroluxOptionalDataViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Training\TrainingViewController.cs" />
+    <Compile Include="ViewControllers\Training\TrainingViewController.designer.cs">
+      <DependentUpon>TrainingViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\TrainingModelViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\TrainingModelViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\TrainingModelViewCell.designer.cs">
+      <DependentUpon>TrainingModelViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\TrainingTypeViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\TrainingTypeViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\TrainingTypeViewCell.designer.cs">
+      <DependentUpon>TrainingTypeViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\TrainingAudienceViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\TrainingAudienceViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\TrainingAudienceViewCell.designer.cs">
+      <DependentUpon>TrainingAudienceViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\TrainingTimeViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\TrainingTimeViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\TrainingTimeViewCell.designer.cs">
+      <DependentUpon>TrainingTimeViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Sellout\SelloutTableViewCell.cs" />
+    <Compile Include="ViewControllers\Sellout\SelloutTableViewCell.designer.cs">
+      <DependentUpon>SelloutTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesTableViewCell.cs" />
+    <Compile Include="ViewControllers\ShopActivities\ShopActivitiesTableViewCell.designer.cs">
+      <DependentUpon>ShopActivitiesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupViewController.designer.cs">
+      <DependentUpon>FloorspaceProductGroupViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupTableViewCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupTableViewCell.designer.cs">
+      <DependentUpon>FloorspaceProductGroupTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupDetailsViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupDetailsViewController.designer.cs">
+      <DependentUpon>FloorspaceProductGroupDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupBrandsTableViewCell.cs" />
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FloorspaceProductGroupBrandsTableViewCell.designer.cs">
+      <DependentUpon>FloorspaceProductGroupBrandsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\ProductGroupBrandTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ProductGroupBrandTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ProductGroupBrandTableViewCell.designer.cs">
+      <DependentUpon>ProductGroupBrandTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesDetailsViewController.cs" />
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesDetailsViewController.designer.cs">
+      <DependentUpon>ElectroluxActivitiesDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesViewController.cs" />
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesViewController.designer.cs">
+      <DependentUpon>ElectroluxActivitiesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesTableViewCell.cs" />
+    <Compile Include="ViewControllers\ElectroluxActivities\ElectroluxActivitiesTableViewCell.designer.cs">
+      <DependentUpon>ElectroluxActivitiesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FSProductGroupOptionalDataViewController.cs" />
+    <Compile Include="ViewControllers\FloorspaceProductGroup\FSProductGroupOptionalDataViewController.designer.cs">
+      <DependentUpon>FSProductGroupOptionalDataViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\OptionalDataPopoverController.cs" />
+    <Compile Include="ViewControllers\Base\OptionalDataBaseViewController.cs" />
+    <Compile Include="ViewControllers\Base\BasePopoverController.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenDetailsViewController.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenDetailsViewController.designer.cs">
+      <DependentUpon>KitchenDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kitchen\KitchenItemsTableViewCell.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenItemsTableViewCell.designer.cs">
+      <DependentUpon>KitchenItemsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kitchen\KitchenOptionalDataViewController.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenOptionalDataViewController.designer.cs">
+      <DependentUpon>KitchenOptionalDataViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kitchen\KitchenViewController.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenViewController.designer.cs">
+      <DependentUpon>KitchenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kitchen\KitchenListTableViewCell.cs" />
+    <Compile Include="ViewControllers\Kitchen\KitchenListTableViewCell.designer.cs">
+      <DependentUpon>KitchenListTableViewCell.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Controls\TableViewCells\BrandTableViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\BrandTableViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\BrandTableViewCell.designer.cs">
+      <DependentUpon>BrandTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\POSM Activities\PosmActivitiesTableViewCell.cs" />
+    <Compile Include="ViewControllers\POSM Activities\PosmActivitiesTableViewCell.designer.cs">
+      <DependentUpon>PosmActivitiesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\POSM Activities\PosmActivitiesViewController.cs" />
+    <Compile Include="ViewControllers\POSM Activities\PosmActivitiesViewController.designer.cs">
+      <DependentUpon>PosmActivitiesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\POSM Activities\PosmActivityDetailsViewController.cs" />
+    <Compile Include="ViewControllers\POSM Activities\PosmActivityDetailsViewController.designer.cs">
+      <DependentUpon>PosmActivityDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackDetailsViewController.cs" />
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackDetailsViewController.designer.cs">
+      <DependentUpon>ProductFeedbackDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackTableViewCell.cs" />
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackTableViewCell.designer.cs">
+      <DependentUpon>ProductFeedbackTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackViewController.cs" />
+    <Compile Include="ViewControllers\ProductFeedback\ProductFeedbackViewController.designer.cs">
+      <DependentUpon>ProductFeedbackViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kilometers\KilometersViewController.cs" />
+    <Compile Include="ViewControllers\Kilometers\KilometersViewController.designer.cs">
+      <DependentUpon>KilometersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SynchronizationViewController.cs" />
+    <Compile Include="ViewControllers\SynchronizationViewController.designer.cs">
+      <DependentUpon>SynchronizationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Summary\FullOverviewViewController.cs" />
+    <Compile Include="ViewControllers\Summary\FullOverviewViewController.designer.cs">
+      <DependentUpon>FullOverviewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Kilometers\TimePickerViewController.cs" />
+    <Compile Include="ViewControllers\Kilometers\TimePickerViewController.designer.cs">
+      <DependentUpon>TimePickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Summary\FullOverviewFloorspaceElectroluxTableViewCell.cs" />
+    <Compile Include="ViewControllers\Summary\FullOverviewFloorspaceElectroluxTableViewCell.designer.cs">
+      <DependentUpon>FullOverviewFloorspaceElectroluxTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Summary\ShopInformationTableViewCell.cs" />
+    <Compile Include="ViewControllers\Summary\ShopInformationTableViewCell.designer.cs">
+      <DependentUpon>ShopInformationTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Summary\TrainingTableViewCell.cs" />
+    <Compile Include="ViewControllers\Summary\TrainingTableViewCell.designer.cs">
+      <DependentUpon>TrainingTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Utility.cs" />
+    <Compile Include="ViewControllers\Photos\PhotoDetailsViewController.cs" />
+    <Compile Include="ViewControllers\Photos\PhotoDetailsViewController.designer.cs">
+      <DependentUpon>PhotoDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Photos\PhotosTableViewCell.cs" />
+    <Compile Include="ViewControllers\Photos\PhotosTableViewCell.designer.cs">
+      <DependentUpon>PhotosTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Photos\PhotosViewController.cs" />
+    <Compile Include="ViewControllers\Photos\PhotosViewController.designer.cs">
+      <DependentUpon>PhotosViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\AnalyticsFloorspaceViewController.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsFloorspaceViewController.designer.cs">
+      <DependentUpon>AnalyticsFloorspaceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\AnalyticsPreviousReportDataRowCell.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsPreviousReportDataRowCell.designer.cs">
+      <DependentUpon>AnalyticsPreviousReportDataRowCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TableViewCells\QualityLevelViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\QualityLevelViewCell.designer.cs" />
+    <InterfaceDefinition Include="Controls\TableViewCells\QualityLevelViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\ReferToViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\ReferToViewCell.designer.cs" />
+    <InterfaceDefinition Include="Controls\TableViewCells\ReferToViewCell.xib" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsComparisonDataRowCell.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsComparisonDataRowCell.designer.cs">
+      <DependentUpon>AnalyticsComparisonDataRowCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\AnalyticsKitchenViewController.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsKitchenViewController.designer.cs">
+      <DependentUpon>AnalyticsKitchenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\KitchenComparisonDataRowCell.cs" />
+    <Compile Include="ViewControllers\Analytics\KitchenComparisonDataRowCell.designer.cs">
+      <DependentUpon>KitchenComparisonDataRowCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\KitchenPreviousReportDataRowCell.cs" />
+    <Compile Include="ViewControllers\Analytics\KitchenPreviousReportDataRowCell.designer.cs">
+      <DependentUpon>KitchenPreviousReportDataRowCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\AnalyticsModelVariationsViewController.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsModelVariationsViewController.designer.cs">
+      <DependentUpon>AnalyticsModelVariationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\ModelVariationsCell.cs" />
+    <Compile Include="ViewControllers\Analytics\ModelVariationsCell.designer.cs">
+      <DependentUpon>ModelVariationsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Analytics\AnalyticsFloorspaceDetailsViewController.cs" />
+    <Compile Include="ViewControllers\Analytics\AnalyticsFloorspaceDetailsViewController.designer.cs">
+      <DependentUpon>AnalyticsFloorspaceDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\ReportsFiltersViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\ReportsFiltersViewController.designer.cs">
+      <DependentUpon>ReportsFiltersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\FilterCityViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\FilterCityViewController.designer.cs">
+      <DependentUpon>FilterCityViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\FilterDatesViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\FilterDatesViewController.designer.cs">
+      <DependentUpon>FilterDatesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\FilterStatusViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\FilterStatusViewController.designer.cs">
+      <DependentUpon>FilterStatusViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\FilterStoreViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\FilterStoreViewController.designer.cs">
+      <DependentUpon>FilterStoreViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\BaseFilterViewController.cs" />
+    <Compile Include="ViewControllers\ReportFilters\BaseFilterViewController.designer.cs">
+      <DependentUpon>BaseFilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Comment\CommentViewController.cs" />
+    <Compile Include="ViewControllers\Comment\CommentViewController.designer.cs">
+      <DependentUpon>CommentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ReportFilters\ReportUnitTableViewCell.cs" />
+    <Compile Include="ViewControllers\ReportFilters\ReportUnitTableViewCell.designer.cs">
+      <DependentUpon>ReportUnitTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ElectroluxColors.cs" />
+    <None Include="Properties\app.manifest" />
+    <Compile Include="ViewControllers\Summary\CommentsTableViewCell.cs" />
+    <Compile Include="ViewControllers\Summary\CommentsTableViewCell.designer.cs">
+      <DependentUpon>CommentsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\DataSource\BaseTableViewSource.cs" />
+    <Compile Include="ViewControllers\Base\DataSource\ListBaseTableViewSource.cs" />
+    <Compile Include="ViewControllers\Base\DataSource\ReportsListBaseTableViewSource.cs" />
+    <Compile Include="ViewControllers\Base\DataSource\ReportsListTableViewSource.cs" />
+    <Compile Include="ViewControllers\Base\DataSource\BindableBaseTableViewSource.cs" />
+    <InterfaceDefinition Include="Controls\TableViewCells\EnergyClassViewCell.xib" />
+    <Compile Include="Controls\TableViewCells\EnergyClassViewCell.cs" />
+    <Compile Include="Controls\TableViewCells\EnergyClassViewCell.designer.cs">
+      <DependentUpon>EnergyClassViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Summary\FullOverviewFloorspaceCompetitorsTableViewCell.cs" />
+    <Compile Include="ViewControllers\Summary\FullOverviewFloorspaceCompetitorsTableViewCell.designer.cs">
+      <DependentUpon>FullOverviewFloorspaceCompetitorsTableViewCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\xamarin.ios10\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=dc9353ad6e05028d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\xamarin.ios10\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AppCenter.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.XamarinIOS.Unified, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\Xamarin.iOS10\SQLite.Net.Platform.XamarinIOS.Unified.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLiteNetExtensions.2.1.0\lib\netstandard1.1\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Syncfusion.Data.Portable">
+      <HintPath>..\Libs\Syncfusion\14.2.0.26\pcl\Syncfusion.Data.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Portable">
+      <HintPath>..\Libs\Syncfusion\14.2.0.26\pcl\Syncfusion.GridCommon.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.iOS">
+      <HintPath>..\Libs\Syncfusion\14.2.0.26\ios-unified\Syncfusion.SfDataGrid.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms">
+      <HintPath>..\Libs\Syncfusion\14.2.0.26\ios-unified\Syncfusion.SfDataGrid.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms.iOS">
+      <HintPath>..\Libs\Syncfusion\14.2.0.26\ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Naxam.FSCalendar.iOS">
+      <HintPath>..\packages\Naxam.FSCalendar.iOS.2.7.9\lib\Xamarin.iOS10\Naxam.FSCalendar.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator">
+      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\netstandard2.0\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.14\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.14\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.14\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.14\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.5.231\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\packages\Xamarin.Essentials.1.1.0\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="Calabash">
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.21.8\lib\Xamarin.iOS\Calabash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <!--<BundleResource Include="..\Electrolux.ShopFloor.Middleware\Contents\resource_translation.xml">
+      <Link>Resources\resource_translation.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="..\Electrolux.ShopFloor.Middleware\Contents\predefined_brands.xml">
+      <Link>Resources\predefined_brands.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>-->
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Media.xcassets\asterisk-icon.imageset\" />
+    <Folder Include="Resources\Media.xcassets\date-icon.imageset\" />
+    <Folder Include="Resources\Media.xcassets\minus-button.imageset\" />
+    <Folder Include="Resources\Media.xcassets\plus-button.imageset\" />
+    <Folder Include="Resources\Media.xcassets\select-icon.imageset\" />
+    <Folder Include="Resources\Media.xcassets\sync-icon.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_black_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_black_RGB.imageset\Electrolux_logo_master_black_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_blue_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_blue_RGB.imageset\Electrolux_logo_master_blue_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_white_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_master_white_RGB.imageset\Electrolux_logo_master_white_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_black_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_black_RGB.imageset\Electrolux_logo_stacked_master_black_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_blue_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_blue_RGB.imageset\Electrolux_logo_stacked_master_blue_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_white_RGB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Electrolux_logo_stacked_master_white_RGB.imageset\Electrolux_logo_stacked_master_white_RGB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bg_login.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bg_login.imageset\bg_login.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bg_login.imageset\bg_login%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-logout.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-logout.imageset\btn-logout.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-logout.imageset\btn-logout%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings-alert.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings-alert.imageset\btn-settings-alert.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings-alert.imageset\btn-settings-alert%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings.imageset\btn-settings.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\btn-settings.imageset\btn-settings%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\shopfloorapp_splash.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\shopfloorapp_splash.imageset\shopfloorapp_splash.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\shopfloorapp_splash.imageset\shopfloorapp_splash%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\options-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\options-icon.imageset\list01.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\options-icon.imageset\list01%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\info-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\info-icon.imageset\list02.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\info-icon.imageset\list02%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bin-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bin-icon.imageset\list03.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\bin-icon.imageset\list03%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-icon.imageset\plus.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-icon.imageset\plus%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-icon.imageset\upload-botton.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-icon.imageset\upload-botton%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-grey-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-grey-icon.imageset\upload-botton-grey.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\upload-grey-icon.imageset\upload-botton-grey%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-button.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\minus-button.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-button.imageset\piu.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\plus-button.imageset\piu%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\minus-button.imageset\meno.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\minus-button.imageset\meno%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\asterisk-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\asterisk-icon.imageset\ico-asterisk.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\asterisk-icon.imageset\ico-asterisk%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\select-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\select-icon.imageset\select_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\select-icon.imageset\select_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\sync-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\sync-icon.imageset\sync.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\sync-icon.imageset\sync%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\date-icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\date-icon.imageset\ico-date.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\date-icon.imageset\ico-date%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Landscape.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Landscape%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-unchecked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-checked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-checked.imageset\checked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-checked.imageset\checked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-unchecked.imageset\unchecked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\checkbox-unchecked.imageset\unchecked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-checked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-unchecked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-checked.imageset\star-checked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-checked.imageset\star-checked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-unchecked.imageset\star-W.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\star-unchecked.imageset\star-gray-W.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\home_icona.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\home_icona.imageset\ico-home%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\home_icona.imageset\ico-home%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcon.appiconset\Icon-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcon.appiconset\Icon-76%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Square44x44LogoUAT.scale-200 copy.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Square44x44LogoUAT.scale-200 copy 2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DRCollctionViewBinding\DRCollctionViewBinding\DRCollctionViewBinding.csproj">
+      <Project>{ad375fc2-db6c-4177-9824-974d934414f3}</Project>
+      <Name>DRCollctionViewBinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Electrolux.ShopFloor.Core\Electrolux.ShopFloor.Core.csproj">
+      <Project>{95fd1ff3-74bf-4583-aa5e-1f36f3a470e4}</Project>
+      <Name>Electrolux.ShopFloor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Electrolux.ShopFloor.Middleware\Electrolux.ShopFloor.Middleware.csproj">
+      <Project>{a81e2a9e-77a9-4460-9ef4-65364dca95ff}</Project>
+      <Name>Electrolux.ShopFloor.Middleware</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Electrolux.ShopFloor.Mvvm\Electrolux.ShopFloor.Mvvm.csproj">
+      <Project>{6a3d20e1-568f-4c92-b1a7-9eec4de7801f}</Project>
+      <Name>Electrolux.ShopFloor.Mvvm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElectroluxSans_1_Thin.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_2_Light.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_3_Regular.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_4_Semibold.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_5_Bold.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_Oblique_1_Thin.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_Oblique_2_Light.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_Oblique_3_Regular.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_Oblique_4_Semibold.otf" />
+    <BundleResource Include="Resources\ElectroluxSans_Oblique_5_Bold.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <Import Project="..\Electrolux.ShopFloor.Shared\Electrolux.ShopFloor.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.2\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.2\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="CustomIPAName" AfterTargets="CreateIpa" DependsOnTargets="_DetectSigningIdentity" Condition="'$(OS)'=='Windows_NT'">
+    <Message Text="CustomIPAName post" Importance="high" />
+    <CreateProperty Value="$(ProjectDir)Info-$(Configuration).plist">
+      <Output TaskParameter="Value" PropertyName="_plist" />
+    </CreateProperty>
+    <Message Text="Info.plist: $(_plist)" Importance="high" />
+    <XmlPeek XmlInputPath="$(_plist)" Query="//*[text()='CFBundleVersion']/following-sibling::string[1]/text()">
+      <Output TaskParameter="Result" ItemName="_BundleVersion" />
+    </XmlPeek>
+    <CreateProperty Value="$(IpaPackagePath.Replace('.ipa','[$(_BundleVersion)].ipa'))">
+      <Output TaskParameter="Value" PropertyName="NewIpaPackagePath" />
+    </CreateProperty>
+    <Message Text="BundleVersion: $(_BundleVersion)" Importance="high" />
+    <Message Text="IpaPackagePath: $(IpaPackagePath)" Importance="high" />
+    <Message Text="NewIpaPackagePath: $(NewIpaPackagePath)" Importance="high" />
+    <Copy SourceFiles="$(ProjectDir)$(IpaPackagePath)" DestinationFiles="$(ProjectDir)$(NewIpaPackagePath)" />
+  </Target>
+</Project>
