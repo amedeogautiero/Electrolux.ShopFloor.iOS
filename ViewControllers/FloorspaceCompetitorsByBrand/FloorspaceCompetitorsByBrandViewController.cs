@@ -60,6 +60,8 @@ namespace Electrolux.ShopFloor.iOS
             filterController.mainController = this;
             filterController.ConfigureArea();
             this.EndAsync();
+
+            this.mainContentCollectionView.ContentOffset = new CoreGraphics.CGPoint(0, 0);
         }
 
         public override void Translations()
