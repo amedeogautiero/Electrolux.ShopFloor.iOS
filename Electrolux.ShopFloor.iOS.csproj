@@ -55,6 +55,35 @@
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
+  <!--<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'UAT2|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <BuildIpa>False</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <MtouchFloat32>True</MtouchFloat32>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+  </PropertyGroup>-->
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -66,7 +95,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>Apple Development: EXTRA.it Srl (8M6X7YJCN5)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchLink>None</MtouchLink>
     <BuildIpa>True</BuildIpa>
@@ -86,7 +115,7 @@
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>False</MtouchProfiling>
     <MtouchFastDev>False</MtouchFastDev>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>x86_64</MtouchArch>
     <MtouchUseLlvm>False</MtouchUseLlvm>
     <MtouchUseThumb>False</MtouchUseThumb>
     <MtouchEnableBitcode>False</MtouchEnableBitcode>
@@ -110,9 +139,9 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|iPhoneSimulator'">
-    <DebugSymbols>true</DebugSymbols>
+    <!--<DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\iPhoneSimulator\UAT\</OutputPath>
-    <DefineConstants>USERACCEPTANCETESTING;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <DefineConstants>DEBUG;USERACCEPTANCETESTING;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
@@ -120,9 +149,47 @@
     <MtouchDebug>true</MtouchDebug>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
-    <CodesignKey>Apple Development: Amedeo Gautiero (468DDBX9S7)</CodesignKey>
+    <CodesignProvision>XC iOS: it.extra.Electrolux.ShopFloor.iOS</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchEnableSGenConc>false</MtouchEnableSGenConc>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <OptimizePNGs>true</OptimizePNGs>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchProfiling>true</MtouchProfiling>-->
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\UAT</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <BuildIpa>False</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
+    <MtouchFloat32>True</MtouchFloat32>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|iPhone'">
     <DebugSymbols>true</DebugSymbols>
@@ -140,6 +207,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <BuildIpa>true</BuildIpa>
     <IpaPackageName>ElectroluxShopFlooriOS.UAT.ipa</IpaPackageName>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|iPhoneSimulator'">
     <DebugSymbols>true</DebugSymbols>
@@ -149,37 +218,43 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchArch>
+    </MtouchArch>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignKey>iPhone Developer: Andrea Rossetti (8NZMACB8GH)</CodesignKey>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchFloat32>true</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|iPhone'">
+    <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\iPhone\Production\</OutputPath>
     <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;PRODUCTION</DefineConstants>
-    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <!--<Optimize>false</Optimize>-->
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <CodesignProvision>XC iOS: it.extra.Electrolux.ShopFloor.iOS</CodesignProvision>
     <CodesignKey>iPhone Distribution: Extra.it srl</CodesignKey>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignProvision>XC iOS: it.extra.Electrolux.ShopFloor.iOS</CodesignProvision>
     <MtouchDebug>false</MtouchDebug>
-    <MtouchUseLlvm>true</MtouchUseLlvm>
-    <BuildIpa>true</BuildIpa>
+    <!--<MtouchUseLlvm>true</MtouchUseLlvm>-->
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchDebug>true</MtouchDebug>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
-    <MtouchProfiling>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>ElectroluxShopFlooriOS.ipa</IpaPackageName>
+    <MtouchFloat32>true</MtouchFloat32>
+    <!--<MtouchDebug>true</MtouchDebug>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>-->
+    <!--<MtouchProfiling>
     </MtouchProfiling>
     <MtouchExtraArgs>
     </MtouchExtraArgs>
     <MtouchUseThumb>
-    </MtouchUseThumb>
-    <MtouchLink>None</MtouchLink>
-    <IpaPackageName>ElectroluxShopFlooriOS.ipa</IpaPackageName>
+    </MtouchUseThumb>-->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
@@ -190,6 +265,37 @@
      echo Prova
     </CreateIpaDependsOn>
   </PropertyGroup>
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT-DEBUG|iPhoneSimulator'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\iPhoneSimulator\UAT-DEBUG\</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>-->
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT-DEBUG|iPhone'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\iPhone\UAT-DEBUG\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>-->
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT-DEBUG|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\UAT-DEBUG\</OutputPath>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>-->
   <ItemGroup>
     <!--<None Include="Info.plist">
       <SubType>Designer</SubType>
@@ -1137,7 +1243,7 @@
     <XmlPeek XmlInputPath="$(_plist)" Query="//*[text()='CFBundleVersion']/following-sibling::string[1]/text()">
       <Output TaskParameter="Result" ItemName="_BundleVersion" />
     </XmlPeek>
-    <CreateProperty Value="$(IpaPackagePath.Replace('.ipa','[$(_BundleVersion)].ipa'))">
+    <CreateProperty Value="$(IpaPackagePath.Replace('.ipa','_$(_BundleVersion)_.ipa'))">
       <Output TaskParameter="Value" PropertyName="NewIpaPackagePath" />
     </CreateProperty>
     <Message Text="BundleVersion: $(_BundleVersion)" Importance="high" />
